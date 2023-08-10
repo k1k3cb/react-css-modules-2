@@ -1,0 +1,15 @@
+.button {
+	width: 288px;
+	height: 56px;
+
+	border-radius: 128px;
+	background: #303b59;
+	color: #fff;
+	border: none;
+
+	/* Body (Bold) */
+	font-family: Hanken Grotesk;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+}

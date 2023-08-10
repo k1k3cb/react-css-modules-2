@@ -1,0 +1,241 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	/* --gradient-1:Gradient 1; */
+
+	/* peguntar tamaño, centrar, gradiente y esfera */
+}
+
+body {
+	font-family: sans-serif;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cards-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 736px;
+	height: 512px;
+	flex-shrink: 0;
+	border-radius: 32px;
+	background: white;
+	box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+}
+
+@media (width>= 768px) {
+	.cards-container {
+		/* flex-direction: row;
+		flex-wrap: wrap; */
+	}
+}
+
+.card-left,
+.card-right {
+	width: 50%;
+	height: 100%;
+}
+
+.card-left {
+	border-radius: 32px;
+	background: var(
+		--gradient-1,
+		linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
+	);
+	padding: 38px 55px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card-left__title {
+	color: #cac9ff;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Heading M */
+	font-family: Hanken Grotesk;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.card-left__result {
+	height: 200px;
+	width: 200px;
+	flex-shrink: 0;
+	flex-shrink: 0;
+	background-image: var(
+		--gradient-2,
+		linear-gradient(
+			180deg,
+			#4d21c9 0%,
+			rgba(37, 33, 201, 0) 100%,
+			rgba(37, 33, 201, 0) 100%
+		)
+	);
+	color: var(--light-blue, #cac9ff);
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Body (Bold) */
+	font-family: Hanken Grotesk;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.card-left__result--number {
+	color: var(--white, #fff);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Heading XL */
+	font-family: Hanken Grotesk;
+	font-size: 72px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 72px; /* 100% */
+	margin: 0;
+	opacity: 0.9;
+}
+
+.card-left__result--total {
+	opacity: 0.5168;
+}
+
+.card-left__result-txt {
+	color: var(--white, #fff);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Heading L */
+	font-family: Hanken Grotesk;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 0;
+}
+
+.card-left__description {
+	color: var(--light-blue, #cac9ff);
+	text-align: center;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Body */
+	font-family: Hanken Grotesk;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.card-right {
+	padding: 38px 40px 40px 40px;
+}
+
+.card-right__title {
+	color: var(--dark-navy, #303b59);
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Heading M */
+	font-family: Hanken Grotesk;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.summary-results {
+	margin-bottom: 45px;
+}
+.summary-results__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	width: 288px;
+	height: 56px;
+	flex-shrink: 0;
+	border-radius: 12px;
+	background: var(
+		--red-95-white,
+		linear-gradient(
+			0deg,
+			rgba(255, 255, 255, 0.95) 0%,
+			rgba(255, 255, 255, 0.95) 100%
+		),
+		#f55
+	);
+	margin-bottom: 16px;
+}
+
+.summary-results-title {
+	color: var(--red, #f55);
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Body */
+	font-family: Hanken Grotesk;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.summary-results-points {
+	color: var(--dark-navy, #303b59);
+	text-align: right;
+	font-feature-settings: 'clig' off, 'liga' off;
+
+	/* Body (Bold) */
+	font-family: Hanken Grotesk;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.summary-results-points-total--span {
+	opacity: 0.5;
+}
+
+.red {
+	color: red;
+}
+
+.yellow {
+	color: #FFB21E;
+}
+
+.green {
+	color: green;
+}
+.blue {
+	color: blue;
+}
+
+.bg-red {
+	background-color: red;
+}
+
+.bg-yellow {
+	background-color: #FFB21E;
+}
+
+.bg-green {
+	background-color: green;
+}
+.bg-blue {
+	background-color: blue;
+}
